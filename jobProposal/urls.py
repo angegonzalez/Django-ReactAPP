@@ -1,5 +1,5 @@
 """
-URL configuration for jobProposalBackend project.
+URL configuration for jobProposal project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -21,9 +21,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', views.get_all_users),
-    path('user/update_button_1', views.update_button_1),
+    path('user/update_button_1', views.update_button_1, ),
     path('user/update_button_2', views.update_button_2),
     path('user/update_last_login', views.update_user_last_login),
     path('user/update_time_connected', views.update_time_connected),
-    path('user/last_login', views.get_user_last_login)
+    path('user/last_login', views.get_user_last_login),
+    path('user_info/', views.get_user_info)
+
 ]

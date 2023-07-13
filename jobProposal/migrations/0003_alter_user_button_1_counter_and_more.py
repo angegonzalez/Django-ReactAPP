@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('jobProposalBackend', '0002_remove_user_id_alter_user_username'),
+        ('jobProposal', '0002_remove_user_id_alter_user_username'),
     ]
 
     operations = [
