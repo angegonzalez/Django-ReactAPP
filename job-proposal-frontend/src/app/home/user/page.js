@@ -64,7 +64,7 @@ export default function HomeUser() {
       }}
     >
       {info != undefined ? (
-        <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-2xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-2xl ">
           <img
             className="object-cover w-full rounded-t-lg h-100 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
             src={info.url}
@@ -72,12 +72,12 @@ export default function HomeUser() {
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <>
-              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
                 {info.title}
               </h5>
             </>
             <>
-              <p className="font-normal text-xs text-gray-700 dark:text-gray-400">
+              <p className="font-normal text-xs text-gray-700 ">
                 {info.description}
               </p>
             </>
@@ -89,7 +89,7 @@ export default function HomeUser() {
                   setalertMessage("Button 1 counter successfully updated!");
                   showSuccessAlert();
                 }}
-                className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:cursor-pointer"
+                className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:cursor-pointer"
               >
                 Button 1
               </a>
@@ -99,7 +99,7 @@ export default function HomeUser() {
                   setalertMessage("Button 2 counter successfully updated!");
                   showSuccessAlert();
                 }}
-                className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 hover:cursor-pointer"
+                className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 hover:cursor-pointer"
               >
                 Button 2
               </a>
@@ -107,7 +107,7 @@ export default function HomeUser() {
                 onClick={() => {
                   logout();
                 }}
-                className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-white bg-rose-500 rounded-lg hover:bg-rose-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:cursor-pointer"
+                className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-white bg-rose-500 rounded-lg hover:bg-rose-300 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:cursor-pointer"
               >
                 Logout
               </a>

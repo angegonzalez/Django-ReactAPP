@@ -1,5 +1,6 @@
 USE job_proposal;
 
+INSERT INTO jobProposal_user VALUES ('admin', 'admin', 0, NOW(), NULL, NULL);
 INSERT INTO jobProposal_user VALUES ('user1', 'test', 0, NOW(), 0, 0);
 INSERT INTO jobProposal_user VALUES ('user2', 'test', 0, NOW(), 0, 0);
 INSERT INTO jobProposal_user VALUES ('user3', 'test', 0, NOW(), 0, 0);

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import getUsers from "../../services/users";
 import { Table } from "antd";
+import BarData from "./bar";
 
 export default function HomeAdmin() {
   const validateUser = () => {
@@ -77,13 +78,13 @@ export default function HomeAdmin() {
 
   return (
     <div
-      className="flex justify-center items-center h-screen bg-no-repeat bg-cover"
+      className="flex justify-center items-center h-screen bg-no-repeat bg-cover w-100"
       style={{
         backgroundImage:
           "url(https://img.freepik.com/vector-gratis/fondo-mapa-topografico_23-2148592632.jpg?w=1800&t=st=1689255348~exp=1689255948~hmac=125ce5bd6e71228450d7c23adb9d8c1797c476dafea4376646617c8721a43268)",
       }}
     >
-      <div className="block items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
+      <div className="block items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row  ">
         {users.length > 0 ? (
           <Table
             columns={columns}
@@ -101,10 +102,16 @@ export default function HomeAdmin() {
               window.location.replace("/login");
               localStorage.removeItem("user");
             }}
-            className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-white bg-rose-500 rounded-lg hover:bg-rose-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:cursor-pointer"
+            className="inline-flex items-center px-4 py-2 text-xs font-medium text-center text-white bg-rose-500 rounded-lg hover:bg-rose-300 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:cursor-pointer"
           >
             Logout
           </a>
+        </div>
+      </div>
+      
+      <div className="flex items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row m-4 w-1/3 overflow-y-auto max-h-1/2">
+        <div className="m-2 w-full center justify-center">
+          <BarData></BarData>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import { Form, Input, Button, Alert } from "antd";
 import doLogin from "../services/login";
 import userUpdateLastLogin from "../services/userUpdateLastLogin";
 
-
 export default function Login() {
   const [showErrorMessage, setshowErrorMessage] = useState(false);
 
@@ -32,15 +31,15 @@ export default function Login() {
           "url(https://img.freepik.com/vector-gratis/fondo-mapa-topografico_23-2148592632.jpg?w=1800&t=st=1689255348~exp=1689255948~hmac=125ce5bd6e71228450d7c23adb9d8c1797c476dafea4376646617c8721a43268)",
       }}
     >
-      <div className="w-full max-w-sm p-4 backdrop-blur-sm bg-white/30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full max-w-sm p-4 backdrop-blur-sm bg-white/30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
         <Form name="basic" onFinish={onFinish} className="space-y-6">
-          <h5 className="text-2xl font-normal text-gray-900 dark:text-white">
+          <h5 className="text-2xl font-normal text-gray-900 ">
             <b>Welcome</b> back!
           </h5>
           <div>
             <label
               htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
               Your username
             </label>
@@ -53,7 +52,7 @@ export default function Login() {
               <input
                 name="email"
                 id="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                 placeholder="username"
               />
             </Form.Item>
@@ -61,7 +60,7 @@ export default function Login() {
           <div>
             <label
               htmlFor="password"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900"
             >
               Your password
             </label>
@@ -76,7 +75,7 @@ export default function Login() {
                 name="password"
                 id="password"
                 placeholder="••••••••"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
               />
             </Form.Item>
           </div>
