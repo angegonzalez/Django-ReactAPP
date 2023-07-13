@@ -50,7 +50,7 @@ npm run dev
 Note: please ensure you've installed dependencies for both Django and React projects.
 
 ### Test the project
-You can log into the app with an admin:
+You can log into the app with an admin (in `localhost:3000/login`):
 ```text
 username: admin
 password: admin
